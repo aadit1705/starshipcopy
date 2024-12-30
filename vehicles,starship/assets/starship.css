@@ -1,0 +1,477 @@
+#starship-uses {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    min-height: 800px;
+    height: 100vh;
+  }
+  @media (min-width: 1012px) {
+    #starship-uses {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 100vh;
+    }
+  }
+  #starship-uses .starship-uses__inner {
+    width: 92%;
+    margin: 0 auto;
+    max-width: 1400px;
+    -webkit-transition: max-width 0.4s ease;
+    transition: max-width 0.4s ease;
+    position: relative;
+    max-width: 100%;
+    z-index: 1;
+  }
+  @media (max-width: 1011px) {
+    #starship-uses .starship-uses__inner {
+      padding: 72px 0 0;
+    }
+  }
+  #starship-uses .starship-uses__inner > * {
+    max-width: 564px;
+    margin-left: 5%;
+  }
+  
+  #uses-earth {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    max-width: 378px;
+    width: 30%;
+  }
+  
+  .destination {
+    position: absolute;
+  }
+  .destination a {
+    display: block;
+    -webkit-transition: opacity 0.4s ease !important;
+    transition: opacity 0.4s ease !important;
+  }
+  .destination a:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+  }
+  .destination svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  
+  #uses-iss {
+    width: 300px;
+    height: 300px;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, 50%, 0);
+    transform: translate3d(-50%, 50%, 0);
+    border-radius: 50%;
+    z-index: 4;
+  }
+  @media (max-width: 767px) {
+    #uses-iss {
+      -webkit-transform: translate3d(-50%, 50%, 0) !important;
+      transform: translate3d(-50%, 50%, 0) !important;
+    }
+  }
+  @media (min-width: 768px) {
+    #uses-iss {
+      width: 480px;
+      height: 480px;
+    }
+  }
+  @media (min-width: 1012px) {
+    #uses-iss {
+      width: 584px;
+      height: 584px;
+    }
+  }
+  #uses-iss .iss__inner {
+    display: block;
+    width: 224px;
+    height: 72px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 2;
+    -webkit-transform: translate3d(-100%, -50%, 0);
+    transform: translate3d(-100%, -50%, 0);
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+  }
+  @media (max-width: 767px) {
+    #uses-iss .iss__inner {
+      top: 0;
+      -webkit-transform: translate3d(-50%, 0%, 0) !important;
+      transform: translate3d(-50%, 0%, 0) !important;
+    }
+  }
+  #uses-iss .iss__inner img {
+    position: absolute;
+    right: 0 !important;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    top: 0;
+    width: 120px;
+  }
+  @media (min-width: 1012px) {
+    #uses-iss .iss__inner img {
+      width: 100%;
+    }
+  }
+  
+  #uses-iss .station__inner {
+      display: block;
+      width: 224px;
+      height: 72px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: 2;
+      -webkit-transform: translate3d(-100%, -50%, 0);
+      transform: translate3d(-100%, -50%, 0);
+      -webkit-transform-origin: top right;
+      transform-origin: top right;
+  }
+  @media (max-width: 767px) {
+      #uses-iss .station__inner {
+        -webkit-transform: translate3d(100%, 0%, 0) !important;
+        transform: translate3d(100%, 0%, 0) !important;
+      }
+  }
+  #uses-iss .station__inner {
+      position: absolute;
+      right: 0 !important;
+      top: 2%;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      width: 120px;
+  }
+  @media (min-width: 1012px) {
+      #uses-iss .station__inner {
+          top: 7%;
+      }
+  
+      #uses-iss .station__inner img {
+        width: 180%;
+      }
+  }
+  
+  #uses-moon {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, 50%, 0);
+    transform: translate3d(-50%, 50%, 0);
+    border-radius: 50%;
+    z-index: 3;
+  }
+  #uses-moon a {
+    display: block;
+    -webkit-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease;
+  }
+  #uses-moon a:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+  }
+  @media (max-width: 767px) {
+    #uses-moon {
+      -webkit-transform: translate3d(-50%, 50%, 0) !important;
+      transform: translate3d(-50%, 50%, 0) !important;
+    }
+  }
+  @media (min-width: 768px) {
+    #uses-moon {
+      width: 780px;
+      height: 780px;
+    }
+  }
+  @media (min-width: 1012px) {
+    #uses-moon {
+      width: 915px;
+      height: 915px;
+    }
+  }
+  #uses-moon .moon__inner {
+    width: 189px;
+    height: 147px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 2;
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transform: translate3d(-50%, -20%, 0);
+    transform: translate3d(-50%, -20%, 0);
+  }
+  @media (max-width: 767px) {
+    #uses-moon .moon__inner {
+      -webkit-transform: translate3d(-30%, -15%, 0) !important;
+      transform: translate3d(-30%, -15%, 0) !important;
+    }
+  }
+  #uses-moon .moon__inner img {
+    position: absolute;
+    right: 0 !important;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    top: 0;
+    width: 150px;
+  }
+  @media (min-width: 1012px) {
+    #uses-moon .moon__inner img {
+      width: 100%;
+    }
+  }
+  
+  #uses-mars {
+    width: 980px;
+    height: 980px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    border-radius: 50%;
+    z-index: 2;
+  }
+  #uses-mars a {
+    display: block;
+    -webkit-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease;
+  }
+  #uses-mars a:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+  }
+  @media (max-width: 767px) {
+    #uses-mars {
+      border: 1px dashed rgba(255, 255, 255, 0.2);
+      -webkit-transform: translate3d(-50%, 30%, 0) !important;
+      transform: translate3d(-50%, 30%, 0) !important;
+    }
+  }
+  @media (min-width: 680px) {
+    #uses-mars {
+      width: 980px;
+      height: 980px;
+      top: 8%;
+    }
+  }
+  @media (min-width: 768px) {
+    #uses-mars {
+      width: 1400px;
+      height: 1400px;
+      top: 35%;
+    }
+  }
+  @media (min-width: 1012px) {
+    #uses-mars {
+      width: 2400px;
+      height: 2400px;
+      top: 20%;
+    }
+  }
+  #uses-mars .mars__inner {
+    width: 360px;
+    height: 218px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 2;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+  }
+  @media (max-width: 1011px) {
+    #uses-mars .mars__inner {
+      -webkit-transform: translate3d(-50%, -30%, 0) !important;
+      transform: translate3d(-50%, -30%, 0) !important;
+    }
+  }
+  #uses-mars .mars__inner img {
+    position: absolute;
+    right: 0 !important;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    top: 0;
+    width: 220px;
+  }
+  @media (min-width: 1012px) {
+    #uses-mars .mars__inner img {
+      width: 100%;
+    }
+  }
+  
+  .hero {
+      display:-webkit-box;
+      display:-ms-flexbox;
+      display:flex;
+      -webkit-box-align:center;
+      -ms-flex-align:center;
+      align-items:center;
+      -webkit-box-pack:center;
+      -ms-flex-pack:center;
+      justify-content:center;
+      position:relative;
+      z-index:1;
+      min-height:100vh;
+  }
+  
+  @media (max-width:767px) {
+      .hero {
+          -webkit-box-align:end;
+          -ms-flex-align:end;
+          align-items:flex-end;
+          padding:220px 0 120px
+      }
+  }
+  
+  .hero figure{
+      position:absolute;
+      z-index:-1;
+      display:block;
+      margin:0;
+      padding:0;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%
+  }
+  
+  .hero figure:after {
+      width:100%;
+      height:100%;
+      content:"";
+      position:absolute;
+      z-index:2;
+      left:0;
+      top:0;
+      background:-webkit-gradient(linear,right top,left top,from(rgba(0,0,0,0)),to(#000));
+      background:linear-gradient(270deg,rgba(0,0,0,0) 0,#000 100%);
+      display:block
+  }
+  
+  @media (max-width:767px) {
+      .hero figure:after {
+          background:linear-gradient(193.04deg,rgba(0,0,0,0) 1.91%,#000 81.74%)
+      }
+  }
+  
+  .hero figure img,.hero figure picture {
+      -o-object-fit:cover;
+      object-fit:cover;
+      width:100%;
+      height:100%
+  }
+  
+  .hero .hero__content{
+      position:relative;
+      z-index:1;
+      max-width:1284px;
+      width:100%;
+      margin:36px auto;
+      padding:0 20px;
+      text-align:left
+  }
+  .hero .hero__content>div>* {
+      max-width:600px
+  }
+  
+  @media (min-width:768px) {
+      .hero .hero__content>div {
+          width:50%
+      }
+  }
+  
+  .hero .hero__content h2 {
+      font-weight:700;
+      font-size:32px;
+      line-height:100%;
+      text-transform:uppercase;
+      color:#fff
+  }
+  
+  .hero .hero__content h2 span {
+      display:block;font-style:normal;font-weight:500;font-size:18px;line-height:150%;text-transform:uppercase;color:#fff
+  }
+  
+  @media (min-width:1012px) {
+      .hero .hero__content h2 {
+          font-size:48px
+      }
+      
+      .hero .hero__content h2 span {
+          font-size:20px
+      }
+  }
+  
+  @media (min-width:768px) {
+      .hero.hero--right figure:after {
+          background:-webkit-gradient(linear,right top,left top,from(#000),to(rgba(0,0,0,0)));
+          background:linear-gradient(270deg,#000 0,rgba(0,0,0,0) 100%)
+      }
+  }
+  
+  @media (min-width:768px) {
+      .hero.hero--right .hero__content>div {
+          margin-left:auto
+      }
+  }
+  
+  .hero--no-screen figure:after {
+      display:none
+  }
+  
+  @media (max-width: 768px) {
+      .starship-gallery {
+          background-size: cover;
+          background-position: top;
+      }
+  }
+  
+  .inner-left-top h2 {
+      line-height: 48px;
+      font-size: 48px;
+  }
+  
+  @media (max-width: 768px) {
+      .inner-left-top h2 {
+          font-size: 36px;
+          line-height: 36px;
+      }
+  
+      .inner-left-bottom h2 {
+          line-height: 36px;
+      }
+  }
+  
+  @media screen and (max-width: 600px){
+      .learn-button {
+          margin-top: 140px;
+      }
+  
+      .inner-left-bottom {
+          bottom: 0;
+      }
+  }
